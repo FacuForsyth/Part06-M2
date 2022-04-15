@@ -96,7 +96,6 @@ function displayToDos() {
   var result = buildToDos(toDoItems);
   result.forEach((element) => {
     toDoContainer.appendChild(element);
-
   });
 }
 
