@@ -1,1 +1,26 @@
 // Mixins acá
+.flex(@direction:column, @justify, @align){
+    display: flex;
+    flex-direction: @direction;     //xq es h2 y ul
+    justify-content: @justify;
+    align-items: @align;
+}
+
+.btn(@color, @background, @border){
+    font-size: 20px;
+    font-weight: 300;
+
+    color: @color;
+    background-color: @background;
+    border-radius: @border;
+    border: 1px solid black;
+    
+    display: inline-block;
+    padding: 10px;
+    cursor: pointer;
+
+    &:hover{                            //para que el boton tenga los colores invertidos cuando le paso el mouse
+        color: @background;
+        background-color: @color;
+    }
+}
